@@ -1,17 +1,35 @@
-import React, { Suspense, useEffect, useState } from 'react';
-import { Canvas } from '@react-three/fiber'
-import { OrbitControls, Preload, SpotLight } from '@react-three/drei';
-import { useGLTF } from '@react-three/drei/core/useGLTF'
-import CanvasLoader from '../Loader'
+import React, { Suspense, useEffect, useState } from "react";
+import { Canvas } from "@react-three/fiber";
+import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
+
+import CanvasLoader from "../Loader";
 
 
 const Computers = () => {
-  const computer = useGLTF("../../../public/desktop_pc/scene.gltf")
+  const computer = useGLTF('../../../public/desktop_pc/scene.gltf')
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(max-width: 500px)");
+
+    setIsMobile(mediaQuery.matches);
+
+    const handleMediaQueryChange = (event) => {
+      setIsMobile(event.matches);
+    };
+
+    mediaQuery.addEventListener("change", handleMediaQueryChange);
+
+    return () => {
+      mediaQuery.removeEventListener("change", handleMediaQueryChange);
+    };
+  }, []);
+
   return (
     <mesh>
       <hemisphereLight intensity={0.15} groundColor="black" />
       <pointLight intensity={1} />
-      <SpotLight
+      <spotLight
         position={[-20, 50, 10]}
         angle={0.12}
         penumbra={1}
@@ -21,10 +39,9 @@ const Computers = () => {
       />
       <primitive object={computer.scene} scale={0.75} position={[0, -3.25, -1.5]} />
     </mesh>
+
   )
 }
-
-
 
 
 const computersCanvas = () => {
@@ -45,7 +62,11 @@ const computersCanvas = () => {
       </Suspense>
       <Preload all />
     </Canvas>
+
   )
 }
+
+
+
 
 export default Computers 
