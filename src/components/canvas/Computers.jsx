@@ -6,7 +6,8 @@ import CanvasLoader from "../Loader";
 
 
 const Computers = () => {
-  const computer = useGLTF('../../../public/desktop_pc/scene.gltf')
+  const computer = useGLTF('./public/desktop_pc/scene.gltf')
+  // const computer = useGLTF('../../../public/desktop_pc/scene.gltf')
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
@@ -44,7 +45,7 @@ const Computers = () => {
 }
 
 
-const computersCanvas = () => {
+const ComputersCanvas = () => {
   return (
     <Canvas
       frameloop="demand"
@@ -69,4 +70,5 @@ const computersCanvas = () => {
 
 
 
-export default Computers 
+
+export default ComputersCanvas;

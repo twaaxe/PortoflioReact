@@ -3,11 +3,11 @@ import { Html, useProgress } from '@react-three/drei'
 
 const Loader = () => {
 
-  const progess = useProgess();
+  const progess = useProgress();
   return (
     <Html>
       <span className='canvas-load'></span>
-      <p>{progress.toFixed(2)}%</p> {/* p.style at 59:42 */}
+      {/* <p>{progess.toFixed(2)}%</p> */}
     </Html>
 
   )
