@@ -1,6 +1,3 @@
-import {sectionWrapper} from ';/SectionWrapper'
+import SectionWrapper from './SectionWrapper'
 
-
-
-
-export {sectionWrapper}
+export { SectionWrapper }

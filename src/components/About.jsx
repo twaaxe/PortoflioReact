@@ -6,6 +6,8 @@ import { styles } from '../styles'
 import { services } from '../constants'
 import { textVariant, fadeIn } from '../utils/motion'
 
+import { SectionWrapper } from '../hoc';
+
 
 const ServiceCard = ({ index, title, icon }) => {
   return (
@@ -18,7 +20,6 @@ const ServiceCard = ({ index, title, icon }) => {
           <h3 className='text-white text-center  font-bold text-[20px]'>{title}</h3>
         </div>
       </motion.div>
-
     </Tilt>
 
   )
@@ -27,7 +28,6 @@ const ServiceCard = ({ index, title, icon }) => {
 const About = () => {
   return (
     <>
-
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>Introduction</p>
         <h2 className={styles.sectionHeadText}>Overview.</h2>
@@ -43,11 +43,12 @@ const About = () => {
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
       </div>
-
-
-
     </>
   )
 }
 
+
+// const About = SectionWrapper(About, "about")
+
+// export default SectionWrapper(About, "about"); //doesnt' work
 export default About
