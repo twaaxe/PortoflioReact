@@ -1,5 +1,5 @@
 import React from 'react'
-import { verticalTimeline, verticalTimelineElement } from 'react-vertical-timeline-component'
+import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component'
 import { motion } from 'framer-motion'
 import 'react-vertical-timeline-component/style.min.css'
 
@@ -8,7 +8,20 @@ import { experiences } from '../constants'
 import { SectionWrapper } from '../hoc'
 import { textVariant } from '../utils/motion'
 
-
+const ExperienceCard = ({ experience }) => {
+  <VerticalTimeline
+    contentStyle={{ background: '#1d1836', color: '#fff' }}
+    contetArrowStyle={{ borderRight: '7px solid  #232631' }}
+    date={experience.date}
+    iconStyles={{ background: experience.iconBg }}
+    icon={
+      <div>
+        
+      </div>
+    }>
+    <h1>azerty</h1>
+  </VerticalTimeline>
+}
 const Experience = () => {
   return (
     <>
@@ -18,6 +31,17 @@ const Experience = () => {
           <h2 className={styles.sectionHeadText}>Work experience.</h2>
         </motion.div>
       </motion.div>
+
+      <div className='mt-20 flex flex-col'>
+        <VerticalTimeline >
+          {experiences.map((experience, index) => {
+            <ExperienceCard key={index} experience={experience} />
+          })
+
+          }
+
+        </VerticalTimeline>
+      </div>
     </>
   )
 }
