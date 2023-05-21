@@ -34,8 +34,7 @@ const About = () => {
       </motion.div>
 
       <motion.p variants={fadeIn("", "", 0.1, 1)} className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio nemo id sapiente quaerat, illo in labore porro aliquam sit suscipit omnis et voluptatum quasi ea assumenda doloremque tempora. Laudantium, consequatur?
-
+        I am a 26 years old man dynamic and ambitious, effective and meticulous in my work. I am curious and like working atmosphere were ideas are easily exchanged wich help my personnal growth and professional development in general. I belive in great value of good communication and a good organisation on the workplace to complete the work efficiently.
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>

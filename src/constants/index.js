@@ -25,21 +25,23 @@ import {
     threejs,
 } from "../assets";
 
-//deleted because it didnt impote correctly so I paste it in navbar.jsv
-// export const navLinks = [
-//     {
-//         id: "about",
-//         title: "About",
-//     },
-//     {
-//         id: "work",
-//         title: "Work",
-//     },
-//     {
-//         id: "contact",
-//         title: "Contact",
-//     },
-// ];
+export const navLinks = [
+    {
+        id: "about",
+        title: "About",
+    },
+    {
+        id: "work",
+        title: "Work",
+    },
+    {
+        id: "contact",
+        title: "Contact",
+    },
+];
+
+
+//liste des services que je propose
 
 const services = [
     {
@@ -47,19 +49,18 @@ const services = [
         icon: web,
     },
     {
-        title: "React Native Developer",
+        title: "React  Developer",
         icon: mobile,
     },
     {
-        title: "Backend Developer",
+        title: "UX Design",
         icon: backend,
-    },
-    {
-        title: "Content Creator",
-        icon: creator,
-    },
+    }
+
 ];
 
+
+//technologies acquises
 const technologies = [
     {
         name: "HTML 5",
@@ -82,7 +83,7 @@ const technologies = [
         icon: reactjs,
     },
     {
-        name: "Redux Toolkit",
+        name: "Vite",
         icon: redux,
     },
     {
@@ -94,10 +95,6 @@ const technologies = [
         icon: nodejs,
     },
     {
-        name: "MongoDB",
-        icon: mongodb,
-    },
-    {
         name: "Three JS",
         icon: threejs,
     },
@@ -106,48 +103,58 @@ const technologies = [
         icon: git,
     },
     {
-        name: "figma",
-        icon: figma,
-    },
-    {
-        name: "docker",
+        name: "MySql",
         icon: docker,
     },
 ];
 
-const experiences = [
+//experiences professionelles
+{/*const experiences = [
     {
-        title: "React.js Developer",
-        company_name: "Starbucks",
+        title: "Etudes de Technologie de l'Informatique",
+        company_name: "Ephec Louvain-La-Neuve",
         icon: starbucks,
         iconBg: "#383E56",
-        date: "March 2020 - April 2021",
+        date: "2016-2017",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Conception de sites Web (débutant; HTML, CSS)",
+            "Infrastructure réseau de base",
+            "Introduction aux base de données et aux système de gestion de base de données",
         ],
     },
     {
-        title: "React Native Developer",
-        company_name: "Tesla",
+        title: " Formation HTML5 et CSS3",
+        company_name: "OpenClassrooms",
+        icon: meta,
+        iconBg: "#E6DEDD",
+        date: "Aout 2020",
+        points: [
+            "Structurer une page web en HTML",
+            "Mettre en forme et organiser les éléments d' une page web en CSS",
+            "Implementing responsive design and ensuring cross-browser compatibility.",
+            "Adapter une page pour la rendre responsive",
+        ],
+    },
+    {
+        title: "Formation développeur web",
+        company_name: "Udemy",
         icon: tesla,
         iconBg: "#E6DEDD",
-        date: "Jan 2021 - Feb 2022",
+        date: "Fevrier 2021",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Conception de sites web",
+            "Dynamisation de sites web (JavaScript, Jquery)",
+            "Framework (Bootsrtap, Bootsnipp) ",
+            "WordPress",
+            "Mise en relation d'un site web avec une base de données "
         ],
     },
     {
         title: "Web Developer",
-        company_name: "Shopify",
+        company_name: "INTEC Bruxelles",
         icon: shopify,
         iconBg: "#383E56",
-        date: "Jan 2022 - Jan 2023",
+        date: "2022-2023",
         points: [
             "Developing and maintaining web applications using React.js and other related technologies.",
             "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -155,46 +162,74 @@ const experiences = [
             "Participating in code reviews and providing constructive feedback to other developers.",
         ],
     },
+
+];*/}
+
+const experiences = [
     {
-        title: "Full stack Developer",
-        company_name: "Meta",
+        title: "Web Developer",
+        company_name: "INTEC Brussels",
+        icon: shopify,
+        iconBg: "#383E56",
+        date: "2022-2023",
+        points: [
+            "Developing and maintaining web applications using React.js and other related technologies",
+            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products",
+            "Implementing responsive design and ensuring cross-browser compatibility",
+            "Participating in code reviews and providing constructive feedback to other developers",
+        ],
+    },
+    {
+        title: "Web Developer Training",
+        company_name: "Udemy",
+        icon: tesla,
+        iconBg: "#E6DEDD",
+        date: "February 2021",
+        points: [
+            "Web design",
+            "Dynamic web development (JavaScript, jQuery)",
+            "Frameworks (Bootstrap, Bootsnipp)",
+            "WordPress",
+            "Connecting a website to a database",
+        ],
+    },
+    {
+        title: "HTML5 and CSS3 Training",
+        company_name: "OpenClassrooms",
         icon: meta,
         iconBg: "#E6DEDD",
-        date: "Jan 2023 - Present",
+        date: "August 2020",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Structuring a web page in HTML",
+            "Styling and organizing elements of a web page in CSS",
+            "Implementing responsive design and ensuring cross-browser compatibility",
+            "Adapting a page to make it responsive",
+        ],
+    },
+    {
+        title: "Computer Technology Studies",
+        company_name: "Ephec Louvain-La-Neuve",
+        icon: starbucks,
+        iconBg: "#383E56",
+        date: "2016-2017",
+        points: [
+            "Web design (beginner; HTML, CSS)",
+            "Basic network infrastructure",
+            "Introduction to databases and database management systems",
         ],
     },
 ];
 
+
 const testimonials = [
     {
         testimonial:
-            "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-        name: "Sara Lee",
-        designation: "CFO",
-        company: "Acme Co",
+            "Nothing to render yet",
+        name: "...",
+        designation: "...",
+        company: "...",
         image: "https://randomuser.me/api/portraits/women/4.jpg",
-    },
-    {
-        testimonial:
-            "I've never met a web developer who truly cares about their clients' success like Rick does.",
-        name: "Chris Brown",
-        designation: "COO",
-        company: "DEF Corp",
-        image: "https://randomuser.me/api/portraits/men/5.jpg",
-    },
-    {
-        testimonial:
-            "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-        name: "Lisa Wang",
-        designation: "CTO",
-        company: "456 Enterprises",
-        image: "https://randomuser.me/api/portraits/women/6.jpg",
-    },
+    }
 ];
 
 const projects = [
