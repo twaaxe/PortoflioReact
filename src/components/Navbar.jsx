@@ -3,7 +3,6 @@ import { useUnmountEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import { styles } from '../styles';
-// import { NavLinks } from '../constants/index';
 import { logo, menu, close } from '../assets';
 
 const Navbar = () => {
@@ -52,7 +51,7 @@ const Navbar = () => {
         </ul>
 
 
-        {/* MOBILE NAVBAR, SHOWS IF THE SCREEN IS SMALL */}
+        {/* MOBILE NAVBAR */}
         <div className=' sm:hidden flex flex-1 justify-end items-center'>
           <img src={toggle ? close : menu} alt={"menulogo"} className='w-9 h-9 object-contain cusros-pointer'
             onClick={() => setToggle(!toggle)} />

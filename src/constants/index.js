@@ -25,6 +25,7 @@ import {
     threejs,
 } from "../assets";
 
+//deleted because it didnt impote correctly so I paste it in navbar.jsv
 // export const navLinks = [
 //     {
 //         id: "about",
