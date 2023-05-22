@@ -20,7 +20,7 @@ const ProjectCard = ({
   source_code_link,
 }) => {
   return (
-    <motion.div variants={fadeIn("up", "spring" )}>
+    <motion.div variants={fadeIn("up", "spring")}>
       <Tilt
         options={{
           max: 45,
@@ -100,4 +100,4 @@ const Works = () => {
   )
 }
 
-export default SectionWrapper(Works, "");
+export default SectionWrapper(Works, "work");
