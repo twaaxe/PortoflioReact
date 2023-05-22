@@ -83,16 +83,8 @@ const technologies = [
         icon: reactjs,
     },
     {
-        name: "Vite",
-        icon: redux,
-    },
-    {
         name: "Tailwind CSS",
         icon: tailwind,
-    },
-    {
-        name: "Node JS",
-        icon: nodejs,
     },
     {
         name: "Three JS",
@@ -102,10 +94,7 @@ const technologies = [
         name: "git",
         icon: git,
     },
-    {
-        name: "MySql",
-        icon: docker,
-    },
+
 ];
 
 //experiences professionelles
