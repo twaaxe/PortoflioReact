@@ -169,6 +169,7 @@ const experiences = [
     {
         title: "Web Developer",
         company_name: "INTEC Brussels",
+        alt: "I",
         icon: shopify,
         iconBg: "#383E56",
         date: "2022-2023",
@@ -182,6 +183,7 @@ const experiences = [
     {
         title: "Web Developer Training",
         company_name: "Udemy",
+        alt: "U",
         icon: tesla,
         iconBg: "#E6DEDD",
         date: "February 2021",
@@ -196,6 +198,7 @@ const experiences = [
     {
         title: "HTML5 and CSS3 Training",
         company_name: "OpenClassrooms",
+        alt: "O",
         icon: meta,
         iconBg: "#E6DEDD",
         date: "August 2020",
@@ -209,6 +212,7 @@ const experiences = [
     {
         title: "Computer Technology Studies",
         company_name: "Ephec Louvain-La-Neuve",
+        alt: "E",
         icon: starbucks,
         iconBg: "#383E56",
         date: "2016-2017",

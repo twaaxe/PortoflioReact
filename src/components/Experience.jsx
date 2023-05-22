@@ -17,14 +17,10 @@ const ExperienceCard = ({ experience }) => (
     }}
     contentArrowStyle={{ borderRight: "7px solid  #232631" }}
     date={experience.date}
-    iconStyle={{ background: experience.iconBg }}
+    iconStyle={{ background: "#00073d" }}
     icon={
       <div className='flex justify-center items-center w-full h-full'>
-        <img
-          src={experience.icon}
-          alt={experience.company_name}
-          className='w-[60%] h-[60%] object-contain'
-        />
+        <strong className='text-black text-[32px]  opacity-60 text-blue-900 font-semibold'>{experience.alt}</strong>
       </div>
     }
   >
