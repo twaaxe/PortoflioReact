@@ -42,6 +42,11 @@ const About = () => {
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
       </div>
+
+      <div className='mt-20 flex flex-wrap items-center justify-evenly gap-10'>
+
+      </div>
+
     </>
   )
 }

@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 
-import { styles } from '../styles'
-import { staggerContainer } from '../utils/motion'
+import { styles } from "../styles";
+import { staggerContainer } from "../utils/motion";
 
-const SectionWrapper = (Component, idName) =>   //need the passed component and section idName 
+const StarWrapper = (Component, idName) =>
     function HOC() {
         return (
             <motion.section
@@ -22,4 +22,4 @@ const SectionWrapper = (Component, idName) =>   //need the passed component and 
         );
     };
 
-export default SectionWrapper
+export default StarWrapper;
